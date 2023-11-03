@@ -3,19 +3,19 @@ include_once 'Person.php';
 class Karyawan implements Person{
 
     public String $nama;
-    public int $nim;
+    public int $nomorinduk;
 
-    public function setNama(){
+    public function setNama(string $nama){
         $this->nama = $nama;
     }
     public function getNama(){
         return $this->nama; 
     }
 
-    public function setNomor_Induk(){
-        $this->nomor_induk = $nomor_induk;
+    public function setNomorinduk(int $nomorinduk){
+        $this->nomorinduk = $nomorinduk;
     }
-    public function getNomor_Induk(){
-        return $this->nomor_induk;
+    public function getNomorinduk(){
+        return $this->nomorinduk;
     }
 }
